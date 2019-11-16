@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Authentication</title>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+	<script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+	<script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+	<script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+	<script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+	<script type="text/javascript" src="lib/url-template/url-template.js"></script>
+	<script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+	<script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+	<script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+	<script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+	<script type="text/javascript" src="lib/apigClient.js"></script>
+
+	<script type="text/javascript" src="webPage_1.js"></script>
+	<link rel="stylesheet" href="webPage_1.css"/>
+
+</head>
+<body>
+	<div class="container initial">
+		<div class="text">Please make your choice</div>
+		<div class="choice">
+			<button class="button" id="accept">Accept</button>
+			<button class="button" id="decline">Decline</button>
+		</div>
+	</div>
+	<div class="container response">
+		<div class="text respond_text"></div>
+	</div>
+	<div class="container form">
+		<div class="text">Please fill the form</div>
+		<div class="text_input">
+			<input type="text" class="name input" size="38" placeholder="name">
+			<input type="text" class="phone input" size="38" placeholder="phone number">
+			<div>
+				<button class="button" id="submit">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
